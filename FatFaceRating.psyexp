@@ -471,7 +471,7 @@
     <Routine name="RatingInstr"/>
     <LoopInitiator loopType="TrialHandler" name="RatingBlockOrder">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'RatingBlock': 'TrialCondition_A.xslx'}, {'RatingBlock': 'TrialCondition_B.xslx'}, {'RatingBlock': 'TrialCondition_C.xslx'}, {'RatingBlock': 'TrialCondition_D.xslx'}, {'RatingBlock': 'TrialCondition_E.xslx'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'RatingBlock': 'TrialCondition_A.xslx'}, {'RatingBlock': 'TrialCondition_B.xslx'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="Rating_BlockOrder.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
