@@ -52,8 +52,30 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'},
-    {'name': 'Picture1.png', 'path': 'Picture1.png'}
+    {'name': 'images/sA-M-ver4.jpg', 'path': 'images/sA-M-ver4.jpg'},
+    {'name': 'images/chld-M-ver2.jpg', 'path': 'images/chld-M-ver2.jpg'},
+    {'name': 'images/chld-M-ver3.jpg', 'path': 'images/chld-M-ver3.jpg'},
+    {'name': 'images/midA-F-ver3.jpg', 'path': 'images/midA-F-ver3.jpg'},
+    {'name': 'images/yA-F-ver5.jpg', 'path': 'images/yA-F-ver5.jpg'},
+    {'name': 'images/adl-M-ver2.jpg', 'path': 'images/adl-M-ver2.jpg'},
+    {'name': 'images/adl-F-ver8.jpg', 'path': 'images/adl-F-ver8.jpg'},
+    {'name': 'images/sA-M-ver7.jpg', 'path': 'images/sA-M-ver7.jpg'},
+    {'name': 'images/adl-M-ver3.jpg', 'path': 'images/adl-M-ver3.jpg'},
+    {'name': 'images/midA-M-ver5.jpg', 'path': 'images/midA-M-ver5.jpg'},
+    {'name': 'images/midA-F-ver2.jpg', 'path': 'images/midA-F-ver2.jpg'},
+    {'name': 'images/yA-M-ver7.jpg', 'path': 'images/yA-M-ver7.jpg'},
+    {'name': 'images/midA-M-ver6.jpg', 'path': 'images/midA-M-ver6.jpg'},
+    {'name': 'images/sA-F-ver1.jpg', 'path': 'images/sA-F-ver1.jpg'},
+    {'name': 'TrialCondition_B.xlsx', 'path': 'TrialCondition_B.xlsx'},
+    {'name': 'Picture1.png', 'path': 'Picture1.png'},
+    {'name': 'images/sA-F-ver7.jpg', 'path': 'images/sA-F-ver7.jpg'},
+    {'name': 'images/yA-F-ver2.jpg', 'path': 'images/yA-F-ver2.jpg'},
+    {'name': 'images/yA-M-ver5.jpg', 'path': 'images/yA-M-ver5.jpg'},
+    {'name': 'images/chld-F-ver2.jpg', 'path': 'images/chld-F-ver2.jpg'},
+    {'name': 'images/adl-F-ver5.jpg', 'path': 'images/adl-F-ver5.jpg'},
+    {'name': 'images/chld-F-ver3.jpg', 'path': 'images/chld-F-ver3.jpg'},
+    {'name': 'TrialCondition_A.xlsx', 'path': 'TrialCondition_A.xlsx'},
+    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'}
   ]
 });
 
