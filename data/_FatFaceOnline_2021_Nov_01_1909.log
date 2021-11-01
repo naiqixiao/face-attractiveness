@@ -1,0 +1,92 @@
+1.2881 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.4313 	INFO 	Loaded monitor calibration from ['2021_08_31 22:24']
+6.4485 	WARNING 	User requested fullscreen with size [1920 1080], but screen is actually [1440, 900]. Using actual size
+7.2725 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7ffa70d33b38>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7ffac5242978>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.2739 	EXP 	window1: mouseVisible = True
+7.2739 	EXP 	window1: recordFrameIntervals = False
+7.4381 	EXP 	window1: recordFrameIntervals = True
+7.6213 	DEBUG 	Screen (0) actual frame rate measured at 60.59
+7.6214 	EXP 	window1: recordFrameIntervals = False
+9.8537 	INFO 	keyboard.Keyboard is using ptb backend.
+9.9908 	EXP 	Created RInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='RInstr', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.5004 	INFO 	keyboard.Keyboard is using ptb backend.
+10.5061 	EXP 	Created image_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='image_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.4, 0.4]), texRes=512, units='height', win=Window(...))
+10.5179 	INFO 	Mouse: using default window
+10.5180 	EXP 	window1: mouseVisible = True
+10.5268 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='HelveticaBold', granularity=0, labelHeight=0.05, labelWrapWidth=None, labels=None, name='slider', opacity=None, pos=(0, -0.28), readOnly=False, self=UNKNOWN, size=(1.0, 0.025), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='height', win=Window(...))
+10.5566 	EXP 	Created NextBu = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='Picture1.png', interpolate=False, mask=None, maskParams=None, name='NextBu', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.1]), texRes=512, units='height', win=Window(...))
+10.5567 	EXP 	window1: mouseVisible = True
+10.5624 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0, pos=array([-0.5 , -0.32]), rgb=UNKNOWN, text='Not Attractive at all', units='height', win=Window(...), wrapWidth=1)
+10.5654 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0, pos=array([ 0.5 , -0.32]), rgb=UNKNOWN, text='Very Attractive', units='height', win=Window(...), wrapWidth=1)
+10.5664 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.5770 	EXP 	Created EndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='EndText', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.5891 	EXP 	slider: autoLog = True
+10.5891 	EXP 	slider: markerPos = None
+10.5891 	EXP 	slider: rating = None
+10.5891 	EXP 	slider: markerPos = None
+10.5891 	EXP 	slider: contrast = 1.0
+10.5891 	EXP 	slider: autoLog = True
+10.5891 	EXP 	slider: styleTweaks = []
+10.5891 	EXP 	slider: style = ['rating']
+10.5891 	EXP 	slider: styleTweaks = ['triangleMarker']
+10.5891 	EXP 	RInstr: autoDraw = True
+11.7838 	DEBUG 	Read excel file with openpyxl: Rating_BlockOrder.xlsx
+11.7841 	EXP 	Imported Rating_BlockOrder.xlsx as conditions, 6 conditions, 1 params
+11.7862 	EXP 	Created sequence: random, trialTypes=6, nReps=1, seed=None
+11.7865 	EXP 	New trial (rep=0, index=0): {'RatingBlock': 'TrialCondition_A.xlsx'}
+11.7915 	DEBUG 	Read excel file with openpyxl: TrialCondition_A.xlsx
+11.7927 	EXP 	Imported TrialCondition_A.xlsx as conditions, 15 conditions, 3 params
+11.7930 	EXP 	Created sequence: random, trialTypes=15, nReps=1, seed=None
+11.7932 	EXP 	New trial (rep=0, index=0): {'Image': None, 'Gender': None, 'AgeGroup': None}
+11.8149 	EXP 	RInstr: autoDraw = False
+11.8149 	EXP 	image_5: image = None
+11.8149 	EXP 	slider: markerPos = None
+11.8149 	EXP 	slider: markerPos = None
+11.8149 	EXP 	slider: rating = None
+11.8149 	EXP 	image_5: autoDraw = True
+12.0885 	EXP 	slider: autoDraw = True
+12.0885 	EXP 	NextBu: autoDraw = True
+12.0885 	EXP 	text_4: autoDraw = True
+12.0885 	EXP 	text_5: autoDraw = True
+21.4068 	DATA 	Mouse: Left button down, pos=(991,203)
+21.4071 	DATA 	Mouse:  Left button up, pos=(991,203)
+21.4072 	DATA 	Mouse: Left button down, pos=(991,203)
+21.4219 	EXP 	slider: markerPos = 80.11111111111111
+21.4389 	EXP 	slider: markerPos = 80.11111111111111
+21.4557 	EXP 	slider: markerPos = 80.11111111111111
+21.4718 	EXP 	slider: markerPos = 80.11111111111111
+21.4889 	EXP 	slider: markerPos = 80.11111111111111
+21.5080 	EXP 	slider: markerPos = 80.11111111111111
+21.5213 	EXP 	slider: markerPos = 80.11111111111111
+21.5374 	EXP 	slider: markerPos = 80.11111111111111
+21.5542 	EXP 	slider: markerPos = 80.11111111111111
+21.5548 	DATA 	Mouse:  Left button up, pos=(991,203)
+21.5720 	EXP 	slider: markerPos = 80.11111111111111
+21.5720 	EXP 	slider: rating = 80.11111111111111
+26.4396 	DATA 	Mouse: Left button down, pos=(756,77)
+26.4399 	DATA 	Mouse:  Left button up, pos=(756,77)
+26.4401 	DATA 	Mouse: Left button down, pos=(756,77)
+26.4573 	EXP 	image_5: autoDraw = False
+26.4573 	EXP 	slider: autoDraw = False
+26.4573 	EXP 	NextBu: autoDraw = False
+26.4573 	EXP 	text_4: autoDraw = False
+26.4573 	EXP 	text_5: autoDraw = False
+26.4573 	EXP 	text: text = 0.8901342913453066
+26.4573 	EXP 	text: autoDraw = True
+26.6070 	DATA 	Mouse:  Left button up, pos=(756,77)
+27.3395 	EXP 	New trial (rep=0, index=1): {'Image': None, 'Gender': None, 'AgeGroup': None}
+27.3565 	EXP 	text: autoDraw = False
+27.3565 	EXP 	text: autoDraw = False
+27.3565 	EXP 	image_5: image = None
+27.3565 	EXP 	slider: markerPos = None
+27.3565 	EXP 	slider: markerPos = None
+27.3565 	EXP 	slider: rating = None
+27.3565 	EXP 	image_5: autoDraw = True
+27.6376 	EXP 	slider: autoDraw = True
+27.6376 	EXP 	NextBu: autoDraw = True
+27.6376 	EXP 	text_4: autoDraw = True
+27.6376 	EXP 	text_5: autoDraw = True
+30.8734 	EXP 	window1: mouseVisible = True
+30.8735 	DEBUG 	Saving data for FatFaceOnline ExperimentHandler
+30.8837 	INFO 	saved data to /Users/kelsielau/Ratings/data/_FatFaceOnline_2021_Nov_01_1909.psydat
+30.8842 	INFO 	saved data to '/Users/kelsielau/Ratings/data/_FatFaceOnline_2021_Nov_01_1909.csv'

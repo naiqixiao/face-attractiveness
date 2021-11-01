@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Oct 12 19:37:56 2021
+    on Mon Nov  1 19:09:02 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -279,7 +279,7 @@ for thisRatingBlockOrder in RatingBlockOrder:
     # set up handler to look after randomisation of conditions etc
     Ratingtrials = data.TrialHandler(nReps=1, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('TrialCondition_A.xlsx'),
+        trialList=data.importConditions(RatingBlock),
         seed=None, name='Ratingtrials')
     thisExp.addLoop(Ratingtrials)  # add the loop to the experiment
     thisRatingtrial = Ratingtrials.trialList[0]  # so we can initialise stimuli with some values
