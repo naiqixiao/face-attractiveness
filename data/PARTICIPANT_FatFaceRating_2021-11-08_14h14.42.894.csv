@@ -1,0 +1,16 @@
+﻿RKey.keys,RKey.rt,slider.response,slider.rt,mouse_5.x,mouse_5.y,mouse_5.leftButton,mouse_5.midButton,mouse_5.rightButton,mouse_5.clicked_name,ITI,Ratingtrials.thisRepN,Ratingtrials.thisTrialN,Ratingtrials.thisN,Ratingtrials.thisIndex,Ratingtrials.ran,Image,Gender,AgeGroup,MacID,Age,"Ethnicity (e.g., African, Asian, & Caucasian)",date,expName,psychopyVersion,OS,frameRate,RatingBlockOrder.thisRepN,RatingBlockOrder.thisTrialN,RatingBlockOrder.thisN,RatingBlockOrder.thisIndex,RatingBlockOrder.ran,RatingBlock
+space,1.4038,68.43022325,1.6133,0.077020738,-0.408336589,1,0,0,NextBu,0.512295768,0,0,0,1,1,Images/sA-M-ver7.jpg,,senioradult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,58.70679389,0.7989,0.052387424,-0.393025038,1,0,0,NextBu,0.880276115,0,1,1,2,1,Images/sA-F-ver1.jpg,,senioradult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,56.11450873,0.7085,0.030700684,-0.396448161,1,0,0,NextBu,0.783297678,0,2,2,3,1,Images/sA-F-ver7.jpg,,senioradult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,54.29877387,1.1615,0.024653388,-0.370126411,1,0,0,NextBu,1.24848194,0,3,3,0,1,Images/sA-M-ver4.jpg,,senioradult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,0,0,0,4,1,TrialCondition_E.xlsx
+,,53.94529215,0.7037,0.014029134,-0.430700005,1,0,0,NextBu,1.302713064,0,0,0,0,1,Images/chld-M-ver2.jpg,,child,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,56.0062188,1.0549,0.02817966,-0.35900316,1,0,0,NextBu,0.808655172,0,1,1,2,1,Images/chld-F-ver2.jpg,,child,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,53.65216743,0.7242,0.026547648,-0.381171875,1,0,0,NextBu,0.65244885,0,2,2,3,1,Images/chld-F-ver3.jpg,,child,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,55.47723389,1.0279,0.024784071,-0.39820143,1,0,0,NextBu,1.463105872,0,3,3,1,1,Images/chld-M-ver3.jpg,,child,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,0,1,1,0,1,TrialCondition_A.xlsx
+,,53.49997287,1.3484,0.026105482,-0.374273071,1,0,0,NextBu,1.327923061,0,0,0,3,1,Images/yA-F-ver5.jpg,,youngadult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,53.27784559,1.0388,0.01661438,-0.374588352,1,0,0,NextBu,1.083490811,0,1,1,2,1,Images/yA-F-ver2.jpg,,youngadult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,55.16618517,1.0183,0.036848416,-0.362213677,1,0,0,NextBu,1.497551885,0,2,2,0,1,Images/yA-M-ver5.jpg,,youngadult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,54.84037272,0.9852,0.03713718,-0.36883138,1,0,0,NextBu,0.873233939,0,3,3,1,1,Images/yA-M-ver7.jpg,,youngadult,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,2021-11-08_14h14.42.894,FatFaceRating,2021.2.3,MacIntel,60.0024001,0,2,2,2,1,TrialCondition_C.xlsx
