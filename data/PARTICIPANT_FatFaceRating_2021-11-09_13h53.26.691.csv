@@ -1,0 +1,11 @@
+﻿RKey.keys,RKey.rt,slider.response,slider.rt,mouse_5.x,mouse_5.y,mouse_5.leftButton,mouse_5.midButton,mouse_5.rightButton,mouse_5.clicked_name,ITI,Ratingtrials.thisRepN,Ratingtrials.thisTrialN,Ratingtrials.thisN,Ratingtrials.thisIndex,Ratingtrials.ran,Image,Gender,AgeGroup,MacID,Age,"Ethnicity (e.g., African, Asian, & Caucasian)",date,expName,psychopyVersion,OS,frameRate,RatingBlockOrder.thisRepN,RatingBlockOrder.thisTrialN,RatingBlockOrder.thisN,RatingBlockOrder.thisIndex,RatingBlockOrder.ran,RatingBlock
+space,1.125,53.73472087,1.079,0.023938327,-0.367694702,1,0,0,NextBu,0.602565452,0,0,0,1,1,Images/midA-M-ver6.jpg,,midadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,54.08017985,0.4652,0.017700331,-0.411999173,1,0,0,NextBu,0.992691903,0,1,1,0,1,Images/midA-M-ver5.jpg,,midadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,52.91370985,0.5422,0.01192593,-0.395388048,1,0,0,NextBu,1.384894195,0,2,2,3,1,Images/midA-F-ver3.jpg,,midadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,52.9248725,0.5558,0.015560506,-0.384519992,1,0,0,NextBu,1.26239948,0,3,3,2,1,Images/midA-F-ver2.jpg,,midadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,0,0,0,3,1,TrialCondition_D.xlsx
+,,53.90923394,0.9814,0.03526279,-0.385165473,1,0,0,NextBu,0.813358121,0,0,0,3,1,Images/yA-F-ver5.jpg,,youngadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,55.72460259,0.7268,0.039184774,-0.394116143,1,0,0,NextBu,1.49729841,0,1,1,2,1,Images/yA-F-ver2.jpg,,youngadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,53.38462999,1.0406,0.032357246,-0.386367933,1,0,0,NextBu,1.42180148,0,2,2,1,1,Images/yA-M-ver7.jpg,,youngadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,54.19930013,0.7633,0.026777683,-0.385526937,1,0,0,NextBu,1.272744395,0,3,3,0,1,Images/yA-M-ver5.jpg,,youngadult,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,2021-11-09_13h53.26.691,FatFaceRating,2021.2.3,MacIntel,60.0024001,0,1,1,2,1,TrialCondition_C.xlsx
