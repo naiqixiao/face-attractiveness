@@ -67,7 +67,6 @@ psychoJS.start({
     {'name': 'Images/midA-M-ver6.jpg', 'path': 'Images/midA-M-ver6.jpg'},
     {'name': 'Images/midA-F-ver2.jpg', 'path': 'Images/midA-F-ver2.jpg'},
     {'name': 'Images/chld-F-ver3.jpg', 'path': 'Images/chld-F-ver3.jpg'},
-    {'name': 'TrialCondition_F.xlsx', 'path': 'TrialCondition_F.xlsx'},
     {'name': 'Images/chld-M-ver2.jpg', 'path': 'Images/chld-M-ver2.jpg'},
     {'name': 'Images/F-C-C.jpg', 'path': 'Images/F-C-C.jpg'},
     {'name': 'Images/sA-F-ver1.jpg', 'path': 'Images/sA-F-ver1.jpg'},
