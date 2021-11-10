@@ -52,33 +52,38 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Images/yA-M-ver5.jpg', 'path': 'Images/yA-M-ver5.jpg'},
-    {'name': 'Images/yA-M-ver7.jpg', 'path': 'Images/yA-M-ver7.jpg'},
-    {'name': 'Images/chld-F-ver2.jpg', 'path': 'Images/chld-F-ver2.jpg'},
-    {'name': 'Images/midA-F-ver3.jpg', 'path': 'Images/midA-F-ver3.jpg'},
-    {'name': 'TrialCondition_D.xlsx', 'path': 'TrialCondition_D.xlsx'},
-    {'name': 'Images/midA-M-ver6.jpg', 'path': 'Images/midA-M-ver6.jpg'},
-    {'name': 'Images/chld-M-ver2.jpg', 'path': 'Images/chld-M-ver2.jpg'},
-    {'name': 'Images/midA-M-ver5.jpg', 'path': 'Images/midA-M-ver5.jpg'},
-    {'name': 'TrialCondition_B.xlsx', 'path': 'TrialCondition_B.xlsx'},
-    {'name': 'Images/adl-M-ver2.jpg', 'path': 'Images/adl-M-ver2.jpg'},
-    {'name': 'Images/adl-M-ver3.jpg', 'path': 'Images/adl-M-ver3.jpg'},
-    {'name': 'Images/sA-M-ver7.jpg', 'path': 'Images/sA-M-ver7.jpg'},
-    {'name': 'Images/sA-F-ver7.jpg', 'path': 'Images/sA-F-ver7.jpg'},
-    {'name': 'Images/adl-F-ver8.jpg', 'path': 'Images/adl-F-ver8.jpg'},
-    {'name': 'TrialCondition_E.xlsx', 'path': 'TrialCondition_E.xlsx'},
-    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'},
+    {'name': 'images/F-C-A.jpeg', 'path': 'images/F-C-A.jpeg'},
+    {'name': 'Images/sA-M-ver4.jpg', 'path': 'Images/sA-M-ver4.jpg'},
+    {'name': 'images/M-A-C.jpeg', 'path': 'images/M-A-C.jpeg'},
+    {'name': 'TrialCondition_F.xlsx', 'path': 'TrialCondition_F.xlsx'},
     {'name': 'Images/yA-F-ver5.jpg', 'path': 'Images/yA-F-ver5.jpg'},
-    {'name': 'Picture1.png', 'path': 'Picture1.png'},
-    {'name': 'TrialCondition_A.xlsx', 'path': 'TrialCondition_A.xlsx'},
+    {'name': 'TrialCondition_E.xlsx', 'path': 'TrialCondition_E.xlsx'},
+    {'name': 'Images/yA-M-ver5.jpg', 'path': 'Images/yA-M-ver5.jpg'},
+    {'name': 'TrialCondition_D.xlsx', 'path': 'TrialCondition_D.xlsx'},
+    {'name': 'images/M-C-A.jpeg', 'path': 'images/M-C-A.jpeg'},
+    {'name': 'TrialCondition_C.xlsx', 'path': 'TrialCondition_C.xlsx'},
+    {'name': 'images/F-A-A.jpeg', 'path': 'images/F-A-A.jpeg'},
+    {'name': 'Images/chld-M-ver2.jpg', 'path': 'Images/chld-M-ver2.jpg'},
+    {'name': 'images/M-A-A.jpg', 'path': 'images/M-A-A.jpg'},
+    {'name': 'Images/yA-F-ver2.jpg', 'path': 'Images/yA-F-ver2.jpg'},
+    {'name': 'Images/chld-F-ver3.jpg', 'path': 'Images/chld-F-ver3.jpg'},
     {'name': 'Images/midA-F-ver2.jpg', 'path': 'Images/midA-F-ver2.jpg'},
     {'name': 'Images/sA-F-ver1.jpg', 'path': 'Images/sA-F-ver1.jpg'},
-    {'name': 'Images/yA-F-ver2.jpg', 'path': 'Images/yA-F-ver2.jpg'},
+    {'name': 'Picture1.png', 'path': 'Picture1.png'},
+    {'name': 'Images/midA-M-ver6.jpg', 'path': 'Images/midA-M-ver6.jpg'},
+    {'name': 'Images/sA-F-ver7.jpg', 'path': 'Images/sA-F-ver7.jpg'},
+    {'name': 'Images/midA-M-ver5.jpg', 'path': 'Images/midA-M-ver5.jpg'},
+    {'name': 'Images/midA-F-ver3.jpg', 'path': 'Images/midA-F-ver3.jpg'},
+    {'name': 'images/F-A-C.jpeg', 'path': 'images/F-A-C.jpeg'},
+    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'},
     {'name': 'Images/chld-M-ver3.jpg', 'path': 'Images/chld-M-ver3.jpg'},
-    {'name': 'Images/chld-F-ver3.jpg', 'path': 'Images/chld-F-ver3.jpg'},
-    {'name': 'Images/sA-M-ver4.jpg', 'path': 'Images/sA-M-ver4.jpg'},
-    {'name': 'TrialCondition_C.xlsx', 'path': 'TrialCondition_C.xlsx'},
-    {'name': 'Images/adl-F-ver5.jpg', 'path': 'Images/adl-F-ver5.jpg'}
+    {'name': 'Images/yA-M-ver7.jpg', 'path': 'Images/yA-M-ver7.jpg'},
+    {'name': 'images/F-C-C.jpeg', 'path': 'images/F-C-C.jpeg'},
+    {'name': 'TrialCondition_A.xlsx', 'path': 'TrialCondition_A.xlsx'},
+    {'name': 'images/M-C-C.jpeg', 'path': 'images/M-C-C.jpeg'},
+    {'name': 'Images/sA-M-ver7.jpg', 'path': 'Images/sA-M-ver7.jpg'},
+    {'name': 'Images/chld-F-ver2.jpg', 'path': 'Images/chld-F-ver2.jpg'},
+    {'name': 'TrialCondition_B.xlsx', 'path': 'TrialCondition_B.xlsx'}
   ]
 });
 
@@ -101,7 +106,8 @@ async function updateInfo() {
 
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
-  
+  psychoJS.setRedirectUrls('https://app.prolific.co/submissions/complete?cc=88B2C83A', '');
+
   return Scheduler.Event.NEXT;
 }
 
