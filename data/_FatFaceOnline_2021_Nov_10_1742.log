@@ -1,0 +1,578 @@
+2.0223 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+10.0407 	INFO 	Loaded monitor calibration from ['2021_08_16 12:45']
+10.0602 	WARNING 	User requested fullscreen with size [1920 1080], but screen is actually [1440, 900]. Using actual size
+11.0190 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fcb92c2bb00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fcb90f94828>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.0194 	EXP 	window1: mouseVisible = True
+11.0195 	EXP 	window1: recordFrameIntervals = False
+11.1826 	EXP 	window1: recordFrameIntervals = True
+11.3662 	DEBUG 	Screen (0) actual frame rate measured at 59.91
+11.3663 	EXP 	window1: recordFrameIntervals = False
+13.5388 	INFO 	keyboard.Keyboard is using ptb backend.
+13.6586 	EXP 	Created RInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='RInstr', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.9930 	INFO 	keyboard.Keyboard is using ptb backend.
+14.0058 	EXP 	Created image_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='image_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.4, 0.4]), texRes=512, units='height', win=Window(...))
+14.0322 	INFO 	Mouse: using default window
+14.0323 	EXP 	window1: mouseVisible = True
+14.0508 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='HelveticaBold', granularity=0, labelHeight=0.05, labelWrapWidth=None, labels=None, name='slider', opacity=None, pos=(0, -0.28), readOnly=False, self=UNKNOWN, size=(1.0, 0.025), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='height', win=Window(...))
+14.1191 	EXP 	Created NextBu = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='Picture1.png', interpolate=False, mask=None, maskParams=None, name='NextBu', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.1]), texRes=512, units='height', win=Window(...))
+14.1193 	EXP 	window1: mouseVisible = True
+14.1324 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0, pos=array([-0.5 , -0.32]), rgb=UNKNOWN, text='Not Attractive at all', units='height', win=Window(...), wrapWidth=1)
+14.1396 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0, pos=array([ 0.5 , -0.32]), rgb=UNKNOWN, text='Very Attractive', units='height', win=Window(...), wrapWidth=1)
+14.1417 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.1650 	EXP 	Created EndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='EndText', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.1948 	EXP 	slider: autoLog = True
+14.1948 	EXP 	slider: markerPos = None
+14.1948 	EXP 	slider: rating = None
+14.1948 	EXP 	slider: markerPos = None
+14.1948 	EXP 	slider: contrast = 1.0
+14.1948 	EXP 	slider: autoLog = True
+14.1948 	EXP 	slider: styleTweaks = []
+14.1948 	EXP 	slider: style = ['rating']
+14.1948 	EXP 	slider: styleTweaks = ['triangleMarker']
+14.1948 	EXP 	RInstr: autoDraw = True
+14.9354 	DEBUG 	Read excel file with openpyxl: Rating_BlockOrder.xlsx
+14.9361 	EXP 	Imported Rating_BlockOrder.xlsx as conditions, 8 conditions, 1 params
+14.9414 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+14.9419 	EXP 	New trial (rep=0, index=0): {'RatingBlock': 'TrialCondition_B.xlsx'}
+14.9504 	DEBUG 	Read excel file with openpyxl: TrialCondition_B.xlsx
+14.9514 	EXP 	Imported TrialCondition_B.xlsx as conditions, 8 conditions, 3 params
+14.9522 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+14.9525 	EXP 	New trial (rep=0, index=0): {'Image': 'Images/F-C-A.jpg', 'Gender': 'F', 'AgeGroup': 'Adult'}
+14.9920 	DATA 	Keypress: space
+15.0036 	EXP 	RInstr: autoDraw = False
+15.0036 	EXP 	image_5: image = 'Images/F-C-A.jpg'
+15.0036 	EXP 	slider: markerPos = None
+15.0036 	EXP 	slider: markerPos = None
+15.0036 	EXP 	slider: rating = None
+15.0036 	EXP 	image_5: autoDraw = True
+15.2852 	EXP 	slider: autoDraw = True
+15.2852 	EXP 	NextBu: autoDraw = True
+15.2852 	EXP 	text_4: autoDraw = True
+15.2852 	EXP 	text_5: autoDraw = True
+16.1366 	DATA 	Mouse: Left button down, pos=(721,202)
+16.1654 	EXP 	slider: markerPos = 50.11111111111111
+16.1916 	EXP 	slider: markerPos = 50.11111111111111
+16.2156 	EXP 	slider: markerPos = 50.11111111111111
+16.2420 	EXP 	slider: markerPos = 50.11111111111111
+16.2481 	DATA 	Mouse:  Left button up, pos=(721,202)
+16.2735 	EXP 	slider: markerPos = 50.11111111111111
+16.2735 	EXP 	slider: rating = 50.11111111111111
+16.6029 	DATA 	Mouse: Left button down, pos=(720,133)
+16.6526 	EXP 	image_5: autoDraw = False
+16.6526 	EXP 	slider: autoDraw = False
+16.6526 	EXP 	NextBu: autoDraw = False
+16.6526 	EXP 	text_4: autoDraw = False
+16.6526 	EXP 	text_5: autoDraw = False
+16.6526 	EXP 	text: text = 0.7250399477876531
+16.6526 	EXP 	text: autoDraw = True
+16.7708 	DATA 	Mouse:  Left button up, pos=(720,133)
+17.3687 	EXP 	New trial (rep=0, index=1): {'Image': 'Images/F-A-C.jpg', 'Gender': 'F', 'AgeGroup': 'Adult'}
+17.3992 	EXP 	text: autoDraw = False
+17.3992 	EXP 	text: autoDraw = False
+17.3992 	EXP 	image_5: image = 'Images/F-A-C.jpg'
+17.3992 	EXP 	slider: markerPos = None
+17.3992 	EXP 	slider: markerPos = None
+17.3992 	EXP 	slider: rating = None
+17.3992 	EXP 	image_5: autoDraw = True
+17.6862 	EXP 	slider: autoDraw = True
+17.6862 	EXP 	NextBu: autoDraw = True
+17.6862 	EXP 	text_4: autoDraw = True
+17.6862 	EXP 	text_5: autoDraw = True
+18.0233 	DATA 	Mouse: Left button down, pos=(730,206)
+18.0460 	EXP 	slider: markerPos = 51.11111111111111
+18.0687 	EXP 	slider: markerPos = 51.11111111111111
+18.0923 	EXP 	slider: markerPos = 51.11111111111111
+18.1150 	EXP 	slider: markerPos = 51.11111111111111
+18.1388 	EXP 	slider: markerPos = 51.11111111111111
+18.1420 	DATA 	Mouse:  Left button up, pos=(730,206)
+18.1658 	EXP 	slider: markerPos = 51.11111111111111
+18.1658 	EXP 	slider: rating = 51.11111111111111
+18.5320 	DATA 	Mouse: Left button down, pos=(719,112)
+18.5757 	EXP 	image_5: autoDraw = False
+18.5757 	EXP 	slider: autoDraw = False
+18.5757 	EXP 	NextBu: autoDraw = False
+18.5757 	EXP 	text_4: autoDraw = False
+18.5757 	EXP 	text_5: autoDraw = False
+18.5757 	EXP 	text: text = 1.0785853644047911
+18.5757 	EXP 	text: autoDraw = True
+18.6453 	DATA 	Mouse:  Left button up, pos=(719,112)
+19.6518 	EXP 	New trial (rep=0, index=2): {'Image': 'Images/M-C-A.jpg', 'Gender': 'M', 'AgeGroup': 'Adult'}
+19.6823 	EXP 	text: autoDraw = False
+19.6823 	EXP 	text: autoDraw = False
+19.6823 	EXP 	image_5: image = 'Images/M-C-A.jpg'
+19.6823 	EXP 	slider: markerPos = None
+19.6823 	EXP 	slider: markerPos = None
+19.6823 	EXP 	slider: rating = None
+19.6823 	EXP 	image_5: autoDraw = True
+19.9747 	EXP 	slider: autoDraw = True
+19.9747 	EXP 	NextBu: autoDraw = True
+19.9747 	EXP 	text_4: autoDraw = True
+19.9747 	EXP 	text_5: autoDraw = True
+20.4181 	DATA 	Mouse: Left button down, pos=(726,193)
+20.4520 	EXP 	slider: markerPos = 50.66666666666667
+20.4755 	EXP 	slider: markerPos = 50.66666666666667
+20.4983 	EXP 	slider: markerPos = 50.66666666666667
+20.5203 	EXP 	slider: markerPos = 50.66666666666667
+20.5350 	DATA 	Mouse:  Left button up, pos=(726,193)
+20.5456 	EXP 	slider: markerPos = 50.66666666666667
+20.5715 	EXP 	slider: markerPos = 50.66666666666667
+20.5715 	EXP 	slider: rating = 50.66666666666667
+20.8072 	DATA 	Mouse: Left button down, pos=(721,99)
+20.8440 	EXP 	image_5: autoDraw = False
+20.8440 	EXP 	slider: autoDraw = False
+20.8440 	EXP 	NextBu: autoDraw = False
+20.8440 	EXP 	text_4: autoDraw = False
+20.8440 	EXP 	text_5: autoDraw = False
+20.8440 	EXP 	text: text = 1.2623619208431098
+20.8440 	EXP 	text: autoDraw = True
+20.9243 	DATA 	Mouse:  Left button up, pos=(721,99)
+22.1002 	EXP 	New trial (rep=0, index=3): {'Image': 'Images/F-C-C.jpg', 'Gender': 'F', 'AgeGroup': 'Adult'}
+22.1325 	EXP 	text: autoDraw = False
+22.1325 	EXP 	text: autoDraw = False
+22.1325 	EXP 	image_5: image = 'Images/F-C-C.jpg'
+22.1325 	EXP 	slider: markerPos = None
+22.1325 	EXP 	slider: markerPos = None
+22.1325 	EXP 	slider: rating = None
+22.1325 	EXP 	image_5: autoDraw = True
+22.4200 	EXP 	slider: autoDraw = True
+22.4200 	EXP 	NextBu: autoDraw = True
+22.4200 	EXP 	text_4: autoDraw = True
+22.4200 	EXP 	text_5: autoDraw = True
+22.6803 	DATA 	Mouse: Left button down, pos=(725,188)
+22.7164 	EXP 	slider: markerPos = 50.55555555555556
+22.7404 	EXP 	slider: markerPos = 50.55555555555556
+22.7650 	EXP 	slider: markerPos = 50.55555555555556
+22.7881 	EXP 	slider: markerPos = 50.55555555555556
+22.7913 	DATA 	Mouse:  Left button up, pos=(725,188)
+22.8201 	EXP 	slider: markerPos = 50.55555555555556
+22.8201 	EXP 	slider: rating = 50.55555555555556
+23.4627 	DATA 	Mouse: Left button down, pos=(715,70)
+23.5012 	EXP 	image_5: autoDraw = False
+23.5012 	EXP 	slider: autoDraw = False
+23.5012 	EXP 	NextBu: autoDraw = False
+23.5012 	EXP 	text_4: autoDraw = False
+23.5012 	EXP 	text_5: autoDraw = False
+23.5012 	EXP 	text: text = 1.4905831572127854
+23.5012 	EXP 	text: autoDraw = True
+23.5703 	DATA 	Mouse:  Left button up, pos=(715,70)
+24.9840 	EXP 	New trial (rep=0, index=4): {'Image': 'Images/M-C-C.jpg', 'Gender': 'M', 'AgeGroup': 'Adult'}
+25.0127 	EXP 	text: autoDraw = False
+25.0127 	EXP 	text: autoDraw = False
+25.0127 	EXP 	image_5: image = 'Images/M-C-C.jpg'
+25.0127 	EXP 	slider: markerPos = None
+25.0127 	EXP 	slider: markerPos = None
+25.0127 	EXP 	slider: rating = None
+25.0127 	EXP 	image_5: autoDraw = True
+25.3100 	EXP 	slider: autoDraw = True
+25.3100 	EXP 	NextBu: autoDraw = True
+25.3100 	EXP 	text_4: autoDraw = True
+25.3100 	EXP 	text_5: autoDraw = True
+25.6136 	DATA 	Mouse: Left button down, pos=(736,196)
+25.6477 	EXP 	slider: markerPos = 51.77777777777778
+25.6677 	EXP 	slider: markerPos = 51.77777777777778
+25.6893 	EXP 	slider: markerPos = 51.77777777777778
+25.7116 	EXP 	slider: markerPos = 51.77777777777778
+25.7156 	DATA 	Mouse:  Left button up, pos=(736,196)
+25.7362 	EXP 	slider: markerPos = 51.77777777777778
+25.7362 	EXP 	slider: rating = 51.77777777777778
+26.0078 	DATA 	Mouse: Left button down, pos=(719,87)
+26.0321 	EXP 	image_5: autoDraw = False
+26.0321 	EXP 	slider: autoDraw = False
+26.0321 	EXP 	NextBu: autoDraw = False
+26.0321 	EXP 	text_4: autoDraw = False
+26.0321 	EXP 	text_5: autoDraw = False
+26.0321 	EXP 	text: text = 0.6873812268933266
+26.0321 	EXP 	text: autoDraw = True
+26.1094 	DATA 	Mouse:  Left button up, pos=(719,87)
+26.7038 	EXP 	New trial (rep=0, index=5): {'Image': 'Images/M-A-C.jpg', 'Gender': 'M', 'AgeGroup': 'Adult'}
+26.7339 	EXP 	text: autoDraw = False
+26.7339 	EXP 	text: autoDraw = False
+26.7339 	EXP 	image_5: image = 'Images/M-A-C.jpg'
+26.7339 	EXP 	slider: markerPos = None
+26.7339 	EXP 	slider: markerPos = None
+26.7339 	EXP 	slider: rating = None
+26.7339 	EXP 	image_5: autoDraw = True
+27.0216 	EXP 	slider: autoDraw = True
+27.0216 	EXP 	NextBu: autoDraw = True
+27.0216 	EXP 	text_4: autoDraw = True
+27.0216 	EXP 	text_5: autoDraw = True
+27.2661 	DATA 	Mouse: Left button down, pos=(728,192)
+27.2989 	EXP 	slider: markerPos = 50.888888888888886
+27.3230 	EXP 	slider: markerPos = 50.888888888888886
+27.3455 	EXP 	slider: markerPos = 50.888888888888886
+27.3678 	EXP 	slider: markerPos = 50.888888888888886
+27.3812 	DATA 	Mouse:  Left button up, pos=(728,192)
+27.3911 	EXP 	slider: markerPos = 50.888888888888886
+27.4153 	EXP 	slider: markerPos = 50.888888888888886
+27.4153 	EXP 	slider: rating = 50.888888888888886
+27.6504 	DATA 	Mouse: Left button down, pos=(720,87)
+27.6764 	EXP 	image_5: autoDraw = False
+27.6764 	EXP 	slider: autoDraw = False
+27.6764 	EXP 	NextBu: autoDraw = False
+27.6764 	EXP 	text_4: autoDraw = False
+27.6764 	EXP 	text_5: autoDraw = False
+27.6764 	EXP 	text: text = 1.4664600745466614
+27.6764 	EXP 	text: autoDraw = True
+27.7459 	DATA 	Mouse:  Left button up, pos=(720,87)
+28.1205 	DATA 	Mouse: Left button down, pos=(720,87)
+28.1214 	DATA 	Mouse:  Left button up, pos=(720,87)
+29.1353 	EXP 	New trial (rep=0, index=6): {'Image': 'Images/M-A-A.jpg', 'Gender': 'M', 'AgeGroup': 'Adult'}
+29.1639 	EXP 	text: autoDraw = False
+29.1639 	EXP 	text: autoDraw = False
+29.1639 	EXP 	image_5: image = 'Images/M-A-A.jpg'
+29.1639 	EXP 	slider: markerPos = None
+29.1639 	EXP 	slider: markerPos = None
+29.1639 	EXP 	slider: rating = None
+29.1639 	EXP 	image_5: autoDraw = True
+29.4527 	EXP 	slider: autoDraw = True
+29.4527 	EXP 	NextBu: autoDraw = True
+29.4527 	EXP 	text_4: autoDraw = True
+29.4527 	EXP 	text_5: autoDraw = True
+29.6370 	DATA 	Mouse: Left button down, pos=(725,194)
+29.6711 	EXP 	slider: markerPos = 50.55555555555556
+29.6945 	EXP 	slider: markerPos = 50.55555555555556
+29.7168 	EXP 	slider: markerPos = 50.55555555555556
+29.7399 	EXP 	slider: markerPos = 50.55555555555556
+29.7538 	DATA 	Mouse:  Left button up, pos=(725,194)
+29.7646 	EXP 	slider: markerPos = 50.55555555555556
+29.7892 	EXP 	slider: markerPos = 50.55555555555556
+29.7892 	EXP 	slider: rating = 50.55555555555556
+30.0478 	DATA 	Mouse: Left button down, pos=(725,159)
+30.1858 	DATA 	Mouse:  Left button up, pos=(725,159)
+30.5008 	DATA 	Mouse: Left button down, pos=(724,119)
+30.5239 	EXP 	image_5: autoDraw = False
+30.5239 	EXP 	slider: autoDraw = False
+30.5239 	EXP 	NextBu: autoDraw = False
+30.5239 	EXP 	text_4: autoDraw = False
+30.5239 	EXP 	text_5: autoDraw = False
+30.5239 	EXP 	text: text = 1.28540287368447
+30.5239 	EXP 	text: autoDraw = True
+30.6264 	DATA 	Mouse:  Left button up, pos=(724,118)
+31.8008 	EXP 	New trial (rep=0, index=7): {'Image': 'Images/F-A-A.jpg', 'Gender': 'F', 'AgeGroup': 'Adult'}
+31.8312 	EXP 	text: autoDraw = False
+31.8312 	EXP 	text: autoDraw = False
+31.8312 	EXP 	image_5: image = 'Images/F-A-A.jpg'
+31.8312 	EXP 	slider: markerPos = None
+31.8312 	EXP 	slider: markerPos = None
+31.8312 	EXP 	slider: rating = None
+31.8312 	EXP 	image_5: autoDraw = True
+32.1242 	EXP 	slider: autoDraw = True
+32.1242 	EXP 	NextBu: autoDraw = True
+32.1242 	EXP 	text_4: autoDraw = True
+32.1242 	EXP 	text_5: autoDraw = True
+32.5642 	DATA 	Mouse: Left button down, pos=(724,201)
+32.5992 	EXP 	slider: markerPos = 50.44444444444445
+32.6230 	EXP 	slider: markerPos = 50.44444444444445
+32.6461 	EXP 	slider: markerPos = 50.44444444444445
+32.6697 	EXP 	slider: markerPos = 50.44444444444445
+32.6735 	DATA 	Mouse:  Left button up, pos=(724,201)
+32.6986 	EXP 	slider: markerPos = 50.44444444444445
+32.6986 	EXP 	slider: rating = 50.44444444444445
+32.9414 	DATA 	Mouse: Left button down, pos=(721,102)
+32.9864 	EXP 	image_5: autoDraw = False
+32.9864 	EXP 	slider: autoDraw = False
+32.9864 	EXP 	NextBu: autoDraw = False
+32.9864 	EXP 	text_4: autoDraw = False
+32.9864 	EXP 	text_5: autoDraw = False
+32.9864 	EXP 	text: text = 1.2972570055096058
+32.9864 	EXP 	text: autoDraw = True
+33.0625 	DATA 	Mouse:  Left button up, pos=(721,102)
+34.2834 	EXP 	New trial (rep=0, index=1): {'RatingBlock': 'TrialCondition_C.xlsx'}
+34.2966 	DEBUG 	Read excel file with openpyxl: TrialCondition_C.xlsx
+34.2974 	EXP 	Imported TrialCondition_C.xlsx as conditions, 4 conditions, 3 params
+34.2981 	EXP 	Created sequence: random, trialTypes=4, nReps=1, seed=None
+34.2985 	EXP 	New trial (rep=0, index=0): {'Image': 'Images/yA-M-ver5.jpg', 'Gender': 'M', 'AgeGroup': 'youngadult'}
+34.3316 	EXP 	text: autoDraw = False
+34.3316 	EXP 	text: autoDraw = False
+34.3316 	EXP 	image_5: image = 'Images/yA-M-ver5.jpg'
+34.3316 	EXP 	slider: markerPos = None
+34.3316 	EXP 	slider: markerPos = None
+34.3316 	EXP 	slider: rating = None
+34.3316 	EXP 	image_5: autoDraw = True
+34.6216 	EXP 	slider: autoDraw = True
+34.6216 	EXP 	NextBu: autoDraw = True
+34.6216 	EXP 	text_4: autoDraw = True
+34.6216 	EXP 	text_5: autoDraw = True
+35.1521 	DATA 	Mouse: Left button down, pos=(727,197)
+35.1734 	EXP 	slider: markerPos = 50.77777777777778
+35.1970 	EXP 	slider: markerPos = 50.77777777777778
+35.2201 	EXP 	slider: markerPos = 50.77777777777778
+35.2459 	EXP 	slider: markerPos = 50.77777777777778
+35.2590 	DATA 	Mouse:  Left button up, pos=(727,197)
+35.2708 	EXP 	slider: markerPos = 50.77777777777778
+35.2970 	EXP 	slider: markerPos = 50.77777777777778
+35.2970 	EXP 	slider: rating = 50.77777777777778
+35.5467 	DATA 	Mouse: Left button down, pos=(727,96)
+35.5905 	EXP 	image_5: autoDraw = False
+35.5905 	EXP 	slider: autoDraw = False
+35.5905 	EXP 	NextBu: autoDraw = False
+35.5905 	EXP 	text_4: autoDraw = False
+35.5905 	EXP 	text_5: autoDraw = False
+35.5905 	EXP 	text: text = 1.1979844014022836
+35.5905 	EXP 	text: autoDraw = True
+35.6669 	DATA 	Mouse:  Left button up, pos=(727,96)
+36.7861 	EXP 	New trial (rep=0, index=1): {'Image': 'Images/yA-F-ver2.jpg', 'Gender': 'F', 'AgeGroup': 'youngadult'}
+36.8241 	EXP 	text: autoDraw = False
+36.8241 	EXP 	text: autoDraw = False
+36.8241 	EXP 	image_5: image = 'Images/yA-F-ver2.jpg'
+36.8241 	EXP 	slider: markerPos = None
+36.8241 	EXP 	slider: markerPos = None
+36.8241 	EXP 	slider: rating = None
+36.8241 	EXP 	image_5: autoDraw = True
+37.1214 	EXP 	slider: autoDraw = True
+37.1214 	EXP 	NextBu: autoDraw = True
+37.1214 	EXP 	text_4: autoDraw = True
+37.1214 	EXP 	text_5: autoDraw = True
+37.6518 	DATA 	Mouse: Left button down, pos=(741,193)
+37.6748 	EXP 	slider: markerPos = 52.33333333333333
+37.6985 	EXP 	slider: markerPos = 52.33333333333333
+37.7211 	EXP 	slider: markerPos = 52.33333333333333
+37.7456 	EXP 	slider: markerPos = 52.33333333333333
+37.7591 	DATA 	Mouse:  Left button up, pos=(741,193)
+37.7704 	EXP 	slider: markerPos = 52.33333333333333
+37.7970 	EXP 	slider: markerPos = 52.33333333333333
+37.7970 	EXP 	slider: rating = 52.33333333333333
+38.0149 	DATA 	Mouse: Left button down, pos=(734,105)
+38.0547 	EXP 	image_5: autoDraw = False
+38.0547 	EXP 	slider: autoDraw = False
+38.0547 	EXP 	NextBu: autoDraw = False
+38.0547 	EXP 	text_4: autoDraw = False
+38.0547 	EXP 	text_5: autoDraw = False
+38.0547 	EXP 	text: text = 0.9757244401109135
+38.0547 	EXP 	text: autoDraw = True
+38.1152 	DATA 	Mouse:  Left button up, pos=(734,105)
+39.0191 	EXP 	New trial (rep=0, index=2): {'Image': 'Images/yA-M-ver7.jpg', 'Gender': 'M', 'AgeGroup': 'youngadult'}
+39.0544 	EXP 	text: autoDraw = False
+39.0544 	EXP 	text: autoDraw = False
+39.0544 	EXP 	image_5: image = 'Images/yA-M-ver7.jpg'
+39.0544 	EXP 	slider: markerPos = None
+39.0544 	EXP 	slider: markerPos = None
+39.0544 	EXP 	slider: rating = None
+39.0544 	EXP 	image_5: autoDraw = True
+39.3446 	EXP 	slider: autoDraw = True
+39.3446 	EXP 	NextBu: autoDraw = True
+39.3446 	EXP 	text_4: autoDraw = True
+39.3446 	EXP 	text_5: autoDraw = True
+39.5706 	DATA 	Mouse: Left button down, pos=(735,188)
+39.5915 	EXP 	slider: markerPos = 51.66666666666667
+39.6141 	EXP 	slider: markerPos = 51.66666666666667
+39.6366 	EXP 	slider: markerPos = 51.66666666666667
+39.6617 	EXP 	slider: markerPos = 51.66666666666667
+39.6846 	EXP 	slider: markerPos = 51.66666666666667
+39.7007 	DATA 	Mouse:  Left button up, pos=(735,188)
+39.7114 	EXP 	slider: markerPos = 51.66666666666667
+39.7367 	EXP 	slider: markerPos = 51.66666666666667
+39.7367 	EXP 	slider: rating = 51.66666666666667
+39.9861 	DATA 	Mouse: Left button down, pos=(735,92)
+40.0313 	EXP 	image_5: autoDraw = False
+40.0313 	EXP 	slider: autoDraw = False
+40.0313 	EXP 	NextBu: autoDraw = False
+40.0313 	EXP 	text_4: autoDraw = False
+40.0313 	EXP 	text_5: autoDraw = False
+40.0313 	EXP 	text: text = 0.8037192231251913
+40.0313 	EXP 	text: autoDraw = True
+40.0844 	DATA 	Mouse:  Left button up, pos=(735,92)
+40.8335 	EXP 	New trial (rep=0, index=3): {'Image': 'Images/yA-F-ver5.jpg', 'Gender': 'F', 'AgeGroup': 'youngadult'}
+40.8692 	EXP 	text: autoDraw = False
+40.8692 	EXP 	text: autoDraw = False
+40.8692 	EXP 	image_5: image = 'Images/yA-F-ver5.jpg'
+40.8692 	EXP 	slider: markerPos = None
+40.8692 	EXP 	slider: markerPos = None
+40.8692 	EXP 	slider: rating = None
+40.8692 	EXP 	image_5: autoDraw = True
+41.1540 	EXP 	slider: autoDraw = True
+41.1540 	EXP 	NextBu: autoDraw = True
+41.1540 	EXP 	text_4: autoDraw = True
+41.1540 	EXP 	text_5: autoDraw = True
+41.4900 	DATA 	Mouse: Left button down, pos=(738,202)
+41.5127 	EXP 	slider: markerPos = 52.0
+41.5356 	EXP 	slider: markerPos = 52.0
+41.5604 	EXP 	slider: markerPos = 52.0
+41.5835 	EXP 	slider: markerPos = 52.0
+41.5977 	DATA 	Mouse:  Left button up, pos=(738,202)
+41.6085 	EXP 	slider: markerPos = 52.0
+41.6336 	EXP 	slider: markerPos = 52.0
+41.6336 	EXP 	slider: rating = 52.0
+41.8586 	DATA 	Mouse: Left button down, pos=(734,92)
+41.8837 	EXP 	image_5: autoDraw = False
+41.8837 	EXP 	slider: autoDraw = False
+41.8837 	EXP 	NextBu: autoDraw = False
+41.8837 	EXP 	text_4: autoDraw = False
+41.8837 	EXP 	text_5: autoDraw = False
+41.8837 	EXP 	text: text = 1.4009616456467162
+41.8837 	EXP 	text: autoDraw = True
+41.9744 	DATA 	Mouse:  Left button up, pos=(734,92)
+43.2833 	EXP 	New trial (rep=0, index=2): {'RatingBlock': None}
+43.2843 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+43.2846 	EXP 	New trial (rep=0, index=0): None
+43.3176 	EXP 	text: autoDraw = False
+43.3176 	EXP 	text: autoDraw = False
+43.3176 	EXP 	image_5: image = 'Images/yA-F-ver5.jpg'
+43.3176 	EXP 	slider: markerPos = None
+43.3176 	EXP 	slider: markerPos = None
+43.3176 	EXP 	slider: rating = None
+43.3176 	EXP 	image_5: autoDraw = True
+43.6083 	EXP 	slider: autoDraw = True
+43.6083 	EXP 	NextBu: autoDraw = True
+43.6083 	EXP 	text_4: autoDraw = True
+43.6083 	EXP 	text_5: autoDraw = True
+44.0172 	DATA 	Mouse: Left button down, pos=(748,193)
+44.0375 	EXP 	slider: markerPos = 53.11111111111111
+44.0596 	EXP 	slider: markerPos = 53.11111111111111
+44.0812 	EXP 	slider: markerPos = 53.11111111111111
+44.1030 	EXP 	slider: markerPos = 53.11111111111111
+44.1057 	DATA 	Mouse:  Left button up, pos=(748,193)
+44.1300 	EXP 	slider: markerPos = 53.11111111111111
+44.1300 	EXP 	slider: rating = 53.11111111111111
+44.3917 	DATA 	Mouse: Left button down, pos=(748,123)
+44.4370 	EXP 	image_5: autoDraw = False
+44.4370 	EXP 	slider: autoDraw = False
+44.4370 	EXP 	NextBu: autoDraw = False
+44.4370 	EXP 	text_4: autoDraw = False
+44.4370 	EXP 	text_5: autoDraw = False
+44.4370 	EXP 	text: text = 0.6819008238625033
+44.4370 	EXP 	text: autoDraw = True
+44.4938 	DATA 	Mouse:  Left button up, pos=(749,122)
+45.1189 	EXP 	New trial (rep=0, index=3): {'RatingBlock': 'TrialCondition_D.xlsx'}
+45.1312 	DEBUG 	Read excel file with openpyxl: TrialCondition_D.xlsx
+45.1320 	EXP 	Imported TrialCondition_D.xlsx as conditions, 4 conditions, 3 params
+45.1326 	EXP 	Created sequence: random, trialTypes=4, nReps=1, seed=None
+45.1330 	EXP 	New trial (rep=0, index=0): {'Image': 'Images/midA-F-ver2.jpg', 'Gender': 'F', 'AgeGroup': 'midadult'}
+45.1947 	EXP 	text: autoDraw = False
+45.1947 	EXP 	text: autoDraw = False
+45.1947 	EXP 	image_5: image = 'Images/midA-F-ver2.jpg'
+45.1947 	EXP 	slider: markerPos = None
+45.1947 	EXP 	slider: markerPos = None
+45.1947 	EXP 	slider: rating = None
+45.1947 	EXP 	image_5: autoDraw = True
+45.4874 	EXP 	slider: autoDraw = True
+45.4874 	EXP 	NextBu: autoDraw = True
+45.4874 	EXP 	text_4: autoDraw = True
+45.4874 	EXP 	text_5: autoDraw = True
+46.0845 	DATA 	Mouse: Left button down, pos=(732,194)
+46.1067 	EXP 	slider: markerPos = 51.22222222222222
+46.1300 	EXP 	slider: markerPos = 51.22222222222222
+46.1526 	EXP 	slider: markerPos = 51.22222222222222
+46.1764 	EXP 	slider: markerPos = 51.22222222222222
+46.1807 	DATA 	Mouse:  Left button up, pos=(731,194)
+46.2029 	EXP 	slider: markerPos = 51.22222222222222
+46.2029 	EXP 	slider: rating = 51.22222222222222
+46.4654 	DATA 	Mouse: Left button down, pos=(743,83)
+46.4940 	EXP 	image_5: autoDraw = False
+46.4940 	EXP 	slider: autoDraw = False
+46.4940 	EXP 	NextBu: autoDraw = False
+46.4940 	EXP 	text_4: autoDraw = False
+46.4940 	EXP 	text_5: autoDraw = False
+46.4940 	EXP 	text: text = 0.532137500090112
+46.4940 	EXP 	text: autoDraw = True
+46.5692 	DATA 	Mouse:  Left button up, pos=(743,83)
+47.0180 	EXP 	New trial (rep=0, index=1): {'Image': 'Images/midA-F-ver3.jpg', 'Gender': 'F', 'AgeGroup': 'midadult'}
+47.0876 	EXP 	text: autoDraw = False
+47.0876 	EXP 	text: autoDraw = False
+47.0876 	EXP 	image_5: image = 'Images/midA-F-ver3.jpg'
+47.0876 	EXP 	slider: markerPos = None
+47.0876 	EXP 	slider: markerPos = None
+47.0876 	EXP 	slider: rating = None
+47.0876 	EXP 	image_5: autoDraw = True
+47.3778 	EXP 	slider: autoDraw = True
+47.3778 	EXP 	NextBu: autoDraw = True
+47.3778 	EXP 	text_4: autoDraw = True
+47.3778 	EXP 	text_5: autoDraw = True
+47.8627 	DATA 	Mouse: Left button down, pos=(725,195)
+47.8984 	EXP 	slider: markerPos = 50.55555555555556
+47.9214 	EXP 	slider: markerPos = 50.55555555555556
+47.9447 	EXP 	slider: markerPos = 50.55555555555556
+47.9671 	EXP 	slider: markerPos = 50.55555555555556
+47.9708 	DATA 	Mouse:  Left button up, pos=(725,195)
+47.9937 	EXP 	slider: markerPos = 50.55555555555556
+47.9937 	EXP 	slider: rating = 50.55555555555556
+48.2225 	DATA 	Mouse: Left button down, pos=(730,111)
+48.2591 	EXP 	image_5: autoDraw = False
+48.2591 	EXP 	slider: autoDraw = False
+48.2591 	EXP 	NextBu: autoDraw = False
+48.2591 	EXP 	text_4: autoDraw = False
+48.2591 	EXP 	text_5: autoDraw = False
+48.2591 	EXP 	text: text = 1.4515701344282903
+48.2591 	EXP 	text: autoDraw = True
+48.3434 	DATA 	Mouse:  Left button up, pos=(730,111)
+49.7006 	EXP 	New trial (rep=0, index=2): {'Image': 'Images/midA-M-ver5.jpg', 'Gender': 'M', 'AgeGroup': 'midadult'}
+49.7713 	EXP 	text: autoDraw = False
+49.7713 	EXP 	text: autoDraw = False
+49.7713 	EXP 	image_5: image = 'Images/midA-M-ver5.jpg'
+49.7713 	EXP 	slider: markerPos = None
+49.7713 	EXP 	slider: markerPos = None
+49.7713 	EXP 	slider: rating = None
+49.7713 	EXP 	image_5: autoDraw = True
+50.0717 	EXP 	slider: autoDraw = True
+50.0717 	EXP 	NextBu: autoDraw = True
+50.0717 	EXP 	text_4: autoDraw = True
+50.0717 	EXP 	text_5: autoDraw = True
+50.6103 	DATA 	Mouse: Left button down, pos=(726,192)
+50.6324 	EXP 	slider: markerPos = 50.66666666666667
+50.6549 	EXP 	slider: markerPos = 50.66666666666667
+50.6779 	EXP 	slider: markerPos = 50.66666666666667
+50.7014 	EXP 	slider: markerPos = 50.66666666666667
+50.7240 	EXP 	slider: markerPos = 50.66666666666667
+50.7292 	DATA 	Mouse:  Left button up, pos=(726,192)
+50.7509 	EXP 	slider: markerPos = 50.66666666666667
+50.7509 	EXP 	slider: rating = 50.66666666666667
+50.9838 	DATA 	Mouse: Left button down, pos=(726,95)
+51.0198 	EXP 	image_5: autoDraw = False
+51.0198 	EXP 	slider: autoDraw = False
+51.0198 	EXP 	NextBu: autoDraw = False
+51.0198 	EXP 	text_4: autoDraw = False
+51.0198 	EXP 	text_5: autoDraw = False
+51.0198 	EXP 	text: text = 0.8516191176409043
+51.0198 	EXP 	text: autoDraw = True
+51.1014 	DATA 	Mouse:  Left button up, pos=(726,95)
+51.8708 	EXP 	New trial (rep=0, index=3): {'Image': 'Images/midA-M-ver6.jpg', 'Gender': 'M', 'AgeGroup': 'midadult'}
+51.9360 	EXP 	text: autoDraw = False
+51.9360 	EXP 	text: autoDraw = False
+51.9360 	EXP 	image_5: image = 'Images/midA-M-ver6.jpg'
+51.9360 	EXP 	slider: markerPos = None
+51.9360 	EXP 	slider: markerPos = None
+51.9360 	EXP 	slider: rating = None
+51.9360 	EXP 	image_5: autoDraw = True
+52.2230 	EXP 	slider: autoDraw = True
+52.2230 	EXP 	NextBu: autoDraw = True
+52.2230 	EXP 	text_4: autoDraw = True
+52.2230 	EXP 	text_5: autoDraw = True
+52.5586 	DATA 	Mouse: Left button down, pos=(730,187)
+52.5807 	EXP 	slider: markerPos = 51.11111111111111
+52.6030 	EXP 	slider: markerPos = 51.11111111111111
+52.6260 	EXP 	slider: markerPos = 51.11111111111111
+52.6486 	EXP 	slider: markerPos = 51.11111111111111
+52.6623 	DATA 	Mouse:  Left button up, pos=(730,187)
+52.6729 	EXP 	slider: markerPos = 51.11111111111111
+52.6997 	EXP 	slider: markerPos = 51.11111111111111
+52.6997 	EXP 	slider: rating = 51.11111111111111
+53.0045 	DATA 	Mouse: Left button down, pos=(730,101)
+53.0289 	EXP 	image_5: autoDraw = False
+53.0289 	EXP 	slider: autoDraw = False
+53.0289 	EXP 	NextBu: autoDraw = False
+53.0289 	EXP 	text_4: autoDraw = False
+53.0289 	EXP 	text_5: autoDraw = False
+53.0289 	EXP 	text: text = 0.8665324689142774
+53.0289 	EXP 	text: autoDraw = True
+53.1073 	DATA 	Mouse:  Left button up, pos=(730,101)
+53.8846 	EXP 	New trial (rep=0, index=4): {'RatingBlock': 'TrialCondition_A.xlsx'}
+53.8979 	DEBUG 	Read excel file with openpyxl: TrialCondition_A.xlsx
+53.9003 	EXP 	Imported TrialCondition_A.xlsx as conditions, 15 conditions, 3 params
+53.9016 	EXP 	Created sequence: random, trialTypes=15, nReps=1, seed=None
+53.9023 	EXP 	New trial (rep=0, index=0): {'Image': None, 'Gender': None, 'AgeGroup': None}
+53.9217 	EXP 	text: autoDraw = False
+53.9217 	EXP 	text: autoDraw = False
+53.9217 	EXP 	image_5: image = None
+53.9217 	EXP 	slider: markerPos = None
+53.9217 	EXP 	slider: markerPos = None
+53.9217 	EXP 	slider: rating = None
+53.9217 	EXP 	image_5: autoDraw = True
+54.2219 	EXP 	slider: autoDraw = True
+54.2219 	EXP 	NextBu: autoDraw = True
+54.2219 	EXP 	text_4: autoDraw = True
+54.2219 	EXP 	text_5: autoDraw = True
+56.1874 	DATA 	Keypress: escape
+56.8293 	EXP 	window1: mouseVisible = True
+56.8295 	DEBUG 	Saving data for FatFaceOnline ExperimentHandler
+56.8356 	INFO 	saved data to /Users/uzhmanagani/Desktop/4D09/Thesis/PsychoPy/Face Attractiveness Rating/data/_FatFaceOnline_2021_Nov_10_1742.psydat
+56.8425 	INFO 	saved data to '/Users/uzhmanagani/Desktop/4D09/Thesis/PsychoPy/Face Attractiveness Rating/data/_FatFaceOnline_2021_Nov_10_1742.csv'
