@@ -1,11 +1,19 @@
-﻿/********************** 
- * Fatfacerating Test *
- **********************/
+﻿/************* 
+ * 面孔评价 Test *
+ *************/
+
+import { core, data, sound, util, visual } from './lib/psychojs-2022.1.2.js';
+const { PsychoJS } = core;
+const { TrialHandler, MultiStairHandler } = data;
+const { Scheduler } = util;
+//some handy aliases as in the psychopy scripts;
+const { abs, sin, cos, PI: pi, sqrt } = Math;
+const { round } = util;
 
 
 // store info about the experiment session:
-let expName = 'FatFaceRating';  // from the Builder filename that created this script
-let expInfo = {'Name': '', 'Gender': '', 'Age': '', 'Ethnicity (e.g., African, Asian, & Caucasian)': ''};
+let expName = '面孔评价';  // from the Builder filename that created this script
+let expInfo = {'Name': '', 'Gender': '', 'Age': ''};
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
@@ -49,24 +57,24 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Images/adl-F-ver8.jpg', 'path': 'Images/adl-F-ver8.jpg'},
-    {'name': 'Images/chld-F-ver3.jpg', 'path': 'Images/chld-F-ver3.jpg'},
-    {'name': 'Images/yA-M-ver7.jpg', 'path': 'Images/yA-M-ver7.jpg'},
     {'name': 'Images/midA-F-ver3.jpg', 'path': 'Images/midA-F-ver3.jpg'},
-    {'name': 'Images/yA-M-ver5.jpg', 'path': 'Images/yA-M-ver5.jpg'},
-    {'name': 'Images/midA-M-ver5.jpg', 'path': 'Images/midA-M-ver5.jpg'},
-    {'name': 'Images/chld-F-ver2.jpg', 'path': 'Images/chld-F-ver2.jpg'},
-    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'},
-    {'name': 'Picture1.png', 'path': 'Picture1.png'},
-    {'name': 'Images/midA-M-ver6.jpg', 'path': 'Images/midA-M-ver6.jpg'},
-    {'name': 'Images/adl-M-ver3.jpg', 'path': 'Images/adl-M-ver3.jpg'},
-    {'name': 'Images/adl-M-ver2.jpg', 'path': 'Images/adl-M-ver2.jpg'},
     {'name': 'Images/yA-F-ver2.jpg', 'path': 'Images/yA-F-ver2.jpg'},
+    {'name': 'Images/yA-M-ver5.jpg', 'path': 'Images/yA-M-ver5.jpg'},
+    {'name': 'Images/adl-F-ver8.jpg', 'path': 'Images/adl-F-ver8.jpg'},
+    {'name': 'Images/yA-M-ver7.jpg', 'path': 'Images/yA-M-ver7.jpg'},
     {'name': 'TrialCondition.xlsx', 'path': 'TrialCondition.xlsx'},
-    {'name': 'Images/adl-F-ver5.jpg', 'path': 'Images/adl-F-ver5.jpg'},
-    {'name': 'Images/chld-M-ver3.jpg', 'path': 'Images/chld-M-ver3.jpg'},
-    {'name': 'Images/midA-F-ver2.jpg', 'path': 'Images/midA-F-ver2.jpg'},
+    {'name': 'Images/adl-M-ver3.jpg', 'path': 'Images/adl-M-ver3.jpg'},
+    {'name': 'Images/chld-F-ver3.jpg', 'path': 'Images/chld-F-ver3.jpg'},
+    {'name': 'Images/adl-M-ver2.jpg', 'path': 'Images/adl-M-ver2.jpg'},
     {'name': 'Images/yA-F-ver5.jpg', 'path': 'Images/yA-F-ver5.jpg'},
+    {'name': 'Images/midA-M-ver5.jpg', 'path': 'Images/midA-M-ver5.jpg'},
+    {'name': 'Picture1.png', 'path': 'Picture1.png'},
+    {'name': 'Rating_BlockOrder.xlsx', 'path': 'Rating_BlockOrder.xlsx'},
+    {'name': 'Images/chld-F-ver2.jpg', 'path': 'Images/chld-F-ver2.jpg'},
+    {'name': 'Images/midA-F-ver2.jpg', 'path': 'Images/midA-F-ver2.jpg'},
+    {'name': 'Images/chld-M-ver3.jpg', 'path': 'Images/chld-M-ver3.jpg'},
+    {'name': 'Images/midA-M-ver6.jpg', 'path': 'Images/midA-M-ver6.jpg'},
+    {'name': 'Images/adl-F-ver5.jpg', 'path': 'Images/adl-F-ver5.jpg'},
     {'name': 'Images/chld-M-ver2.jpg', 'path': 'Images/chld-M-ver2.jpg'}
   ]
 });
@@ -210,7 +218,7 @@ async function experimentInit() {
   EndText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndText',
-    text: 'The experiment is over!\n\nThank you for your participation!',
+    text: '实验结束！\n\n谢谢你的参与！',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -244,9 +252,8 @@ function RatingBlockOrderLoopBegin(RatingBlockOrderLoopScheduler, snapshot) {
     currentLoop = RatingBlockOrder;  // we're now the current loop
     
     // Schedule all the trials in the trialList:
-    RatingBlockOrder.forEach(function() {
+    for (const thisRatingBlockOrder of RatingBlockOrder) {
       const snapshot = RatingBlockOrder.getSnapshot();
-    
       RatingBlockOrderLoopScheduler.add(importConditions(snapshot));
       RatingBlockOrderLoopScheduler.add(instructionRoutineBegin(snapshot));
       RatingBlockOrderLoopScheduler.add(instructionRoutineEachFrame());
@@ -256,7 +263,7 @@ function RatingBlockOrderLoopBegin(RatingBlockOrderLoopScheduler, snapshot) {
       RatingBlockOrderLoopScheduler.add(RatingtrialsLoopScheduler);
       RatingBlockOrderLoopScheduler.add(RatingtrialsLoopEnd);
       RatingBlockOrderLoopScheduler.add(endLoopIteration(RatingBlockOrderLoopScheduler, snapshot));
-    });
+    }
     
     return Scheduler.Event.NEXT;
   }
@@ -280,9 +287,8 @@ function RatingtrialsLoopBegin(RatingtrialsLoopScheduler, snapshot) {
     currentLoop = Ratingtrials;  // we're now the current loop
     
     // Schedule all the trials in the trialList:
-    Ratingtrials.forEach(function() {
+    for (const thisRatingtrial of Ratingtrials) {
       const snapshot = Ratingtrials.getSnapshot();
-    
       RatingtrialsLoopScheduler.add(importConditions(snapshot));
       RatingtrialsLoopScheduler.add(RatingTrialRoutineBegin(snapshot));
       RatingtrialsLoopScheduler.add(RatingTrialRoutineEachFrame());
@@ -291,7 +297,7 @@ function RatingtrialsLoopBegin(RatingtrialsLoopScheduler, snapshot) {
       RatingtrialsLoopScheduler.add(ITIRoutineEachFrame());
       RatingtrialsLoopScheduler.add(ITIRoutineEnd());
       RatingtrialsLoopScheduler.add(endLoopIteration(RatingtrialsLoopScheduler, snapshot));
-    });
+    }
     
     return Scheduler.Event.NEXT;
   }
@@ -341,8 +347,9 @@ function instructionRoutineBegin(snapshot) {
         sliderDirection = "mirrored";
     }
     
-    var blockInstruction = (("Welcome!\n\nIn this study, we need you to rate the " + Task) + " of the faces.\n\n");
-    blockInstruction = (blockInstruction + "click anywhere to start.");
+    var blockInstruction = (("欢迎参加实验！\n\n你会看到一些面孔图片。你需要对面孔的" + Task) + "进行评价。\n\n");
+    blockInstruction = (blockInstruction + "你需要在标尺上点击相应的位置进行评价。\n\n");
+    blockInstruction = (blockInstruction + "点击鼠标开始。");
     
     instrBlock.setText(blockInstruction);
     // setup some python lists for storing info about the mouse
@@ -352,10 +359,9 @@ function instructionRoutineBegin(snapshot) {
     instructionComponents.push(instrBlock);
     instructionComponents.push(mouse);
     
-    instructionComponents.forEach( function(thisComponent) {
+    for (const thisComponent of instructionComponents)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
     return Scheduler.Event.NEXT;
   }
 }
@@ -411,11 +417,11 @@ function instructionRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    instructionComponents.forEach( function(thisComponent) {
+    for (const thisComponent of instructionComponents)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
+        break;
       }
-    });
     
     // refresh the screen if continuing
     if (continueRoutine) {
@@ -431,11 +437,11 @@ var _mouseXYs;
 function instructionRoutineEnd() {
   return async function () {
     //------Ending Routine 'instruction'-------
-    instructionComponents.forEach( function(thisComponent) {
+    for (const thisComponent of instructionComponents) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
-    });
+    }
     // store data for psychoJS.experiment (ExperimentHandler)
     _mouseXYs = mouse.getPos();
     _mouseButtons = mouse.getPressed();
@@ -491,10 +497,9 @@ function RatingTrialRoutineBegin(snapshot) {
     RatingTrialComponents.push(text_5);
     RatingTrialComponents.push(mouse_5);
     
-    RatingTrialComponents.forEach( function(thisComponent) {
+    for (const thisComponent of RatingTrialComponents)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
     return Scheduler.Event.NEXT;
   }
 }
@@ -606,11 +611,11 @@ function RatingTrialRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    RatingTrialComponents.forEach( function(thisComponent) {
+    for (const thisComponent of RatingTrialComponents)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
+        break;
       }
-    });
     
     // refresh the screen if continuing
     if (continueRoutine) {
@@ -625,11 +630,11 @@ function RatingTrialRoutineEachFrame() {
 function RatingTrialRoutineEnd() {
   return async function () {
     //------Ending Routine 'RatingTrial'-------
-    RatingTrialComponents.forEach( function(thisComponent) {
+    for (const thisComponent of RatingTrialComponents) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
-    });
+    }
     
     
     psychoJS.experiment.addData('slider.response', slider.getRating());
@@ -671,10 +676,9 @@ function ITIRoutineBegin(snapshot) {
     ITIComponents = [];
     ITIComponents.push(text);
     
-    ITIComponents.forEach( function(thisComponent) {
+    for (const thisComponent of ITIComponents)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
     return Scheduler.Event.NEXT;
   }
 }
@@ -713,11 +717,11 @@ function ITIRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    ITIComponents.forEach( function(thisComponent) {
+    for (const thisComponent of ITIComponents)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
+        break;
       }
-    });
     
     // refresh the screen if continuing
     if (continueRoutine) {
@@ -732,11 +736,11 @@ function ITIRoutineEachFrame() {
 function ITIRoutineEnd() {
   return async function () {
     //------Ending Routine 'ITI'-------
-    ITIComponents.forEach( function(thisComponent) {
+    for (const thisComponent of ITIComponents) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
-    });
+    }
     // the Routine "ITI" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -761,10 +765,9 @@ function EndRoutineBegin(snapshot) {
     EndComponents = [];
     EndComponents.push(EndText);
     
-    EndComponents.forEach( function(thisComponent) {
+    for (const thisComponent of EndComponents)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
     return Scheduler.Event.NEXT;
   }
 }
@@ -802,11 +805,11 @@ function EndRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    EndComponents.forEach( function(thisComponent) {
+    for (const thisComponent of EndComponents)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
+        break;
       }
-    });
     
     // refresh the screen if continuing
     if (continueRoutine && routineTimer.getTime() > 0) {
@@ -821,11 +824,11 @@ function EndRoutineEachFrame() {
 function EndRoutineEnd() {
   return async function () {
     //------Ending Routine 'End'-------
-    EndComponents.forEach( function(thisComponent) {
+    for (const thisComponent of EndComponents) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
-    });
+    }
     return Scheduler.Event.NEXT;
   };
 }

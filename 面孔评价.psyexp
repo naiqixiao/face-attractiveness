@@ -7,7 +7,7 @@
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="u'data/%s_%s_%s' % (expInfo['Name'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
-    <Param val="{'Name': '', 'Gender': '', 'Age': '', 'Ethnicity (e.g., African, Asian, &amp; Caucasian)': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'Name': '', 'Gender': '', 'Age': ''}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -39,7 +39,7 @@
     <Param val="False" valType="bool" updates="None" name="elSimMode"/>
     <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
     <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
-    <Param val="FatFaceOnline" valType="str" updates="None" name="expName"/>
+    <Param val="面孔评价测试" valType="str" updates="None" name="expName"/>
     <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
     <Param val="None" valType="str" updates="None" name="eyetracker"/>
     <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
@@ -252,7 +252,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="3" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="The experiment is over!&amp;#10;&amp;#10;Thank you for your participation!" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="实验结束！&amp;#10;&amp;#10;谢谢你的参与！" valType="extendedStr" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -378,7 +378,7 @@
         <Param val="True" valType="bool" updates="constant" name="storeRating"/>
         <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
         <Param val="('triangleMarker',)" valType="list" updates="constant" name="styleTweaks"/>
-        <Param val="rating" valType="fixedList" updates="constant" name="styles"/>
+        <Param val="['rating']" valType="fixedList" updates="constant" name="styles"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="(0,25,50,75,100)" valType="list" updates="constant" name="ticks"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -485,8 +485,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="leftText = ''&amp;#10;rightText = ''&amp;#10;sliderDirection = ''" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="var leftText = ''&amp;#10;var rightText = ''&amp;#10;var sliderDirection = ''" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if (Math.random() &lt; 0.5) {&amp;#10;    leftText = LeftLabel;&amp;#10;    rightText = RightLabel;&amp;#10;    sliderDirection = &quot;normal&quot;;&amp;#10;} else {&amp;#10;    leftText = RightLabel;&amp;#10;    rightText = LeftLabel;&amp;#10;    sliderDirection = &quot;mirrored&quot;;&amp;#10;}&amp;#10;&amp;#10;var blockInstruction = ((&quot;Welcome!\n\nIn this study, we need you to rate the &quot; + Task) + &quot; of the faces.\n\n&quot;);&amp;#10;blockInstruction = (blockInstruction + &quot;click anywhere to start.&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if (random() &lt; 0.5):&amp;#10;    leftText = LeftLabel;&amp;#10;    rightText = RightLabel;&amp;#10;    sliderDirection = 'normal';&amp;#10;    &amp;#10;else:&amp;#10;    leftText = RightLabel; &amp;#10;    rightText = LeftLabel;&amp;#10;    sliderDirection = 'mirrored';&amp;#10;    &amp;#10;&amp;#10;blockInstruction = &quot;Welcome!\n\nIn this study, we need you to rate the &quot; + Task + &quot; of the faces you see.\n\n&quot;;&amp;#10;blockInstruction =  blockInstruction + &quot;click anywhere to start.&quot;;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="if (Math.random() &lt; 0.5) {&amp;#10;    leftText = LeftLabel;&amp;#10;    rightText = RightLabel;&amp;#10;    sliderDirection = &quot;normal&quot;;&amp;#10;} else {&amp;#10;    leftText = RightLabel;&amp;#10;    rightText = LeftLabel;&amp;#10;    sliderDirection = &quot;mirrored&quot;;&amp;#10;}&amp;#10;&amp;#10;var blockInstruction = ((&quot;欢迎参加实验！\n\n你会看到一些面孔图片。你需要对面孔的&quot; + Task) + &quot;进行评价。\n\n&quot;);&amp;#10;blockInstruction = (blockInstruction + &quot;你需要在标尺上点击相应的位置进行评价。\n\n&quot;);&amp;#10;blockInstruction = (blockInstruction + &quot;点击鼠标开始。&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if (random() &lt; 0.5):&amp;#10;    leftText = LeftLabel;&amp;#10;    rightText = RightLabel;&amp;#10;    sliderDirection = 'normal';&amp;#10;    &amp;#10;else:&amp;#10;    leftText = RightLabel; &amp;#10;    rightText = LeftLabel;&amp;#10;    sliderDirection = 'mirrored';&amp;#10;    &amp;#10;&amp;#10;blockInstruction = &quot;欢迎参加实验！\n\n你会看到一些面孔图片。你需要对面孔的&quot; + Task + &quot;进行评价。\n\n&quot;;&amp;#10;blockInstruction = blockInstruction + &quot;你需要在标尺上点击相应的位置进行评价。\n\n&quot;;&amp;#10;blockInstruction =  blockInstruction + &quot;点击鼠标开始。&quot;;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
