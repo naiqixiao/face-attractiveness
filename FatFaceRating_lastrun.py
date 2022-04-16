@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Mon Nov 15 17:32:36 2021
+This experiment was created using PsychoPy3 Experiment Builder (v2022.1.2),
+    on Sat Apr 16 07:23:54 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -11,11 +11,9 @@ If you publish work using this script the most relevant publication is:
 
 """
 
-from __future__ import absolute_import, division
-
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
+from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
@@ -26,6 +24,7 @@ from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
+import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
 
@@ -33,9 +32,8 @@ from psychopy.hardware import keyboard
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
-
 # Store info about the experiment session
-psychopyVersion = '2021.2.3'
+psychopyVersion = '2022.1.2'
 expName = 'FatFaceOnline'  # from the Builder filename that created this script
 expInfo = {'MacID': '', 'Gender': '', 'Age': '', 'Ethnicity (e.g., African, Asian, & Caucasian)': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -51,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['MacID'], expName, ex
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/uzhmanagani/Desktop/4D09/Thesis/PsychoPy/Face Attractiveness Rating/FatFaceRating_lastrun.py',
+    originPath='/Users/naiqixiao/Desktop/face-attractiveness/FatFaceRating_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -76,12 +74,20 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+# Setup ioHub
+ioConfig = {}
 
-# Setup eyetracking
-ioDevice = ioConfig = ioSession = ioServer = eyetracker = None
+# Setup iohub keyboard
+ioConfig['Keyboard'] = dict(use_keymap='psychopy')
+
+ioSession = '1'
+if 'session' in expInfo:
+    ioSession = str(expInfo['session'])
+ioServer = io.launchHubServer(window=win, **ioConfig)
+eyetracker = None
 
 # create a default keyboard (e.g. to check for escape)
-defaultKeyboard = keyboard.Keyboard()
+defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # Initialize components for Routine "RatingInstr"
 RatingInstrClock = core.Clock()
@@ -94,12 +100,25 @@ RInstr = visual.TextStim(win=win, name='RInstr',
     depth=0.0);
 RKey = keyboard.Keyboard()
 
+# Initialize components for Routine "instruction"
+instructionClock = core.Clock()
+instrBlock = visual.TextStim(win=win, name='instrBlock',
+    text='',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
+mouse = event.Mouse(win=win)
+x, y = [None, None]
+mouse.mouseClock = core.Clock()
+
 # Initialize components for Routine "RatingTrial"
 RatingTrialClock = core.Clock()
-image_5 = visual.ImageStim(
+face_image = visual.ImageStim(
     win=win,
-    name='image_5', 
-    image='sin', mask=None,
+    name='face_image', 
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, 0), size=(0.4, 0.4),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -108,34 +127,34 @@ slider = visual.Slider(win=win, name='slider',
     startValue=None, size=(1.0, 0.025), pos=(0, -0.28), units=None,
     labels=None, ticks=(0,10,20,30,40,50,60,70,80,90,100), granularity=0,
     style=['rating'], styleTweaks=('triangleMarker',), opacity=1,
-    color='Black', fillColor='Red', borderColor='Black', colorSpace='rgb',
+    labelColor='Black', markerColor='Red', lineColor='Black', colorSpace='rgb',
     font='HelveticaBold', labelHeight=0.05,
-    flip=False, depth=-2, readOnly=False)
+    flip=False, ori=0, depth=-2, readOnly=False)
 NextBu = visual.ImageStim(
     win=win,
     name='NextBu', 
-    image='Picture1.png', mask=None,
+    image='Picture1.png', mask=None, anchor='center',
     ori=0, pos=[0,0], size=(0.2, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=False, depth=-3.0)
-mouse_5 = event.Mouse(win=win)
-x, y = [None, None]
-mouse_5.mouseClock = core.Clock()
 text_4 = visual.TextStim(win=win, name='text_4',
-    text='Not Attractive at all',
+    text='',
     font='Arial',
     pos=(-0.5, -0.32), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-5.0);
+    depth=-4.0);
 text_5 = visual.TextStim(win=win, name='text_5',
-    text='Very Attractive',
+    text='',
     font='Arial',
     pos=(0.5, -0.32), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-6.0);
+    depth=-5.0);
+mouse_5 = event.Mouse(win=win)
+x, y = [None, None]
+mouse_5.mouseClock = core.Clock()
 
 # Initialize components for Routine "ITI"
 ITIClock = core.Clock()
@@ -276,10 +295,142 @@ for thisRatingBlockOrder in RatingBlockOrder:
         for paramName in thisRatingBlockOrder:
             exec('{} = thisRatingBlockOrder[paramName]'.format(paramName))
     
+    # ------Prepare to start Routine "instruction"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    if (random() < 0.5):
+        leftText = LeftLabel;
+        rightText = RightLabel;
+        sliderDirection = 'normal';
+        
+    else:
+        leftText = RightLabel; 
+        rightText = LeftLabel;
+        sliderDirection = 'mirrored';
+        
+    
+    blockInstruction = "now, you will rate the " + Task + " of the faces.\n";
+    
+    blockInstruction =  blockInstruction + "click anywhere to start.";
+    instrBlock.setText(blockInstruction)
+    # setup some python lists for storing info about the mouse
+    mouse.clicked_name = []
+    gotValidClick = False  # until a click is received
+    # keep track of which components have finished
+    instructionComponents = [instrBlock, mouse]
+    for thisComponent in instructionComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    instructionClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "instruction"-------
+    while continueRoutine:
+        # get current time
+        t = instructionClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=instructionClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *instrBlock* updates
+        if instrBlock.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instrBlock.frameNStart = frameN  # exact frame index
+            instrBlock.tStart = t  # local t and not account for scr refresh
+            instrBlock.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instrBlock, 'tStartRefresh')  # time at next scr refresh
+            instrBlock.setAutoDraw(True)
+        # *mouse* updates
+        if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            mouse.frameNStart = frameN  # exact frame index
+            mouse.tStart = t  # local t and not account for scr refresh
+            mouse.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(mouse, 'tStartRefresh')  # time at next scr refresh
+            mouse.status = STARTED
+            mouse.mouseClock.reset()
+            prevButtonState = mouse.getPressed()  # if button is down already this ISN'T a new click
+        if mouse.status == STARTED:  # only update if started and not finished!
+            buttons = mouse.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    # check if the mouse was inside our 'clickable' objects
+                    gotValidClick = False
+                    try:
+                        iter(instrBlock)
+                        clickableList = instrBlock
+                    except:
+                        clickableList = [instrBlock]
+                    for obj in clickableList:
+                        if obj.contains(mouse):
+                            gotValidClick = True
+                            mouse.clicked_name.append(obj.name)
+                    if gotValidClick:  
+                        continueRoutine = False  # abort routine on response
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in instructionComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "instruction"-------
+    for thisComponent in instructionComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    RatingBlockOrder.addData('instrBlock.started', instrBlock.tStartRefresh)
+    RatingBlockOrder.addData('instrBlock.stopped', instrBlock.tStopRefresh)
+    # store data for RatingBlockOrder (TrialHandler)
+    x, y = mouse.getPos()
+    buttons = mouse.getPressed()
+    if sum(buttons):
+        # check if the mouse was inside our 'clickable' objects
+        gotValidClick = False
+        try:
+            iter(instrBlock)
+            clickableList = instrBlock
+        except:
+            clickableList = [instrBlock]
+        for obj in clickableList:
+            if obj.contains(mouse):
+                gotValidClick = True
+                mouse.clicked_name.append(obj.name)
+    RatingBlockOrder.addData('mouse.x', x)
+    RatingBlockOrder.addData('mouse.y', y)
+    RatingBlockOrder.addData('mouse.leftButton', buttons[0])
+    RatingBlockOrder.addData('mouse.midButton', buttons[1])
+    RatingBlockOrder.addData('mouse.rightButton', buttons[2])
+    if len(mouse.clicked_name):
+        RatingBlockOrder.addData('mouse.clicked_name', mouse.clicked_name[0])
+    RatingBlockOrder.addData('mouse.started', mouse.tStart)
+    RatingBlockOrder.addData('mouse.stopped', mouse.tStop)
+    # the Routine "instruction" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     Ratingtrials = data.TrialHandler(nReps=1, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions(RatingBlock),
+        trialList=data.importConditions('TrialCondition.xlsx'),
         seed=None, name='Ratingtrials')
     thisExp.addLoop(Ratingtrials)  # add the loop to the experiment
     thisRatingtrial = Ratingtrials.trialList[0]  # so we can initialise stimuli with some values
@@ -298,13 +449,15 @@ for thisRatingBlockOrder in RatingBlockOrder:
         # ------Prepare to start Routine "RatingTrial"-------
         continueRoutine = True
         # update component parameters for each repeat
-        image_5.setImage(Image)
+        face_image.setImage(Image)
         slider.reset()
+        text_4.setText('leftText')
+        text_5.setText('rightText')
         # setup some python lists for storing info about the mouse_5
         mouse_5.clicked_name = []
         gotValidClick = False  # until a click is received
         # keep track of which components have finished
-        RatingTrialComponents = [image_5, slider, NextBu, mouse_5, text_4, text_5]
+        RatingTrialComponents = [face_image, slider, NextBu, text_4, text_5, mouse_5]
         for thisComponent in RatingTrialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -335,14 +488,14 @@ for thisRatingBlockOrder in RatingBlockOrder:
                 positionNext = (0, -0.9)
                 #startNext = False
             
-            # *image_5* updates
-            if image_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # *face_image* updates
+            if face_image.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
-                image_5.frameNStart = frameN  # exact frame index
-                image_5.tStart = t  # local t and not account for scr refresh
-                image_5.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(image_5, 'tStartRefresh')  # time at next scr refresh
-                image_5.setAutoDraw(True)
+                face_image.frameNStart = frameN  # exact frame index
+                face_image.tStart = t  # local t and not account for scr refresh
+                face_image.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(face_image, 'tStartRefresh')  # time at next scr refresh
+                face_image.setAutoDraw(True)
             
             # *slider* updates
             if slider.status == NOT_STARTED and tThisFlip >= 0.3-frameTolerance:
@@ -363,34 +516,6 @@ for thisRatingBlockOrder in RatingBlockOrder:
                 NextBu.setAutoDraw(True)
             if NextBu.status == STARTED:  # only update if drawing
                 NextBu.setPos(positionNext, log=False)
-            # *mouse_5* updates
-            if mouse_5.status == NOT_STARTED and t >= 0.3-frameTolerance:
-                # keep track of start time/frame for later
-                mouse_5.frameNStart = frameN  # exact frame index
-                mouse_5.tStart = t  # local t and not account for scr refresh
-                mouse_5.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(mouse_5, 'tStartRefresh')  # time at next scr refresh
-                mouse_5.status = STARTED
-                mouse_5.mouseClock.reset()
-                prevButtonState = mouse_5.getPressed()  # if button is down already this ISN'T a new click
-            if mouse_5.status == STARTED:  # only update if started and not finished!
-                buttons = mouse_5.getPressed()
-                if buttons != prevButtonState:  # button state changed?
-                    prevButtonState = buttons
-                    if sum(buttons) > 0:  # state changed to a new click
-                        # check if the mouse was inside our 'clickable' objects
-                        gotValidClick = False
-                        try:
-                            iter(NextBu,)
-                            clickableList = NextBu,
-                        except:
-                            clickableList = [NextBu,]
-                        for obj in clickableList:
-                            if obj.contains(mouse_5):
-                                gotValidClick = True
-                                mouse_5.clicked_name.append(obj.name)
-                        if gotValidClick:  # abort routine on response
-                            continueRoutine = False
             
             # *text_4* updates
             if text_4.status == NOT_STARTED and tThisFlip >= 0.3-frameTolerance:
@@ -409,6 +534,34 @@ for thisRatingBlockOrder in RatingBlockOrder:
                 text_5.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
                 text_5.setAutoDraw(True)
+            # *mouse_5* updates
+            if mouse_5.status == NOT_STARTED and t >= 0.3-frameTolerance:
+                # keep track of start time/frame for later
+                mouse_5.frameNStart = frameN  # exact frame index
+                mouse_5.tStart = t  # local t and not account for scr refresh
+                mouse_5.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(mouse_5, 'tStartRefresh')  # time at next scr refresh
+                mouse_5.status = STARTED
+                mouse_5.mouseClock.reset()
+                prevButtonState = mouse_5.getPressed()  # if button is down already this ISN'T a new click
+            if mouse_5.status == STARTED:  # only update if started and not finished!
+                buttons = mouse_5.getPressed()
+                if buttons != prevButtonState:  # button state changed?
+                    prevButtonState = buttons
+                    if sum(buttons) > 0:  # state changed to a new click
+                        # check if the mouse was inside our 'clickable' objects
+                        gotValidClick = False
+                        try:
+                            iter([NextBu,])
+                            clickableList = [NextBu,]
+                        except:
+                            clickableList = [[NextBu,]]
+                        for obj in clickableList:
+                            if obj.contains(mouse_5):
+                                gotValidClick = True
+                                mouse_5.clicked_name.append(obj.name)
+                        if gotValidClick:  
+                            continueRoutine = False  # abort routine on response
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -431,14 +584,18 @@ for thisRatingBlockOrder in RatingBlockOrder:
         for thisComponent in RatingTrialComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        Ratingtrials.addData('image_5.started', image_5.tStartRefresh)
-        Ratingtrials.addData('image_5.stopped', image_5.tStopRefresh)
+        Ratingtrials.addData('face_image.started', face_image.tStartRefresh)
+        Ratingtrials.addData('face_image.stopped', face_image.tStopRefresh)
         Ratingtrials.addData('slider.response', slider.getRating())
         Ratingtrials.addData('slider.rt', slider.getRT())
         Ratingtrials.addData('slider.started', slider.tStartRefresh)
         Ratingtrials.addData('slider.stopped', slider.tStopRefresh)
         Ratingtrials.addData('NextBu.started', NextBu.tStartRefresh)
         Ratingtrials.addData('NextBu.stopped', NextBu.tStopRefresh)
+        Ratingtrials.addData('text_4.started', text_4.tStartRefresh)
+        Ratingtrials.addData('text_4.stopped', text_4.tStopRefresh)
+        Ratingtrials.addData('text_5.started', text_5.tStartRefresh)
+        Ratingtrials.addData('text_5.stopped', text_5.tStopRefresh)
         # store data for Ratingtrials (TrialHandler)
         x, y = mouse_5.getPos()
         buttons = mouse_5.getPressed()
@@ -446,10 +603,10 @@ for thisRatingBlockOrder in RatingBlockOrder:
             # check if the mouse was inside our 'clickable' objects
             gotValidClick = False
             try:
-                iter(NextBu,)
-                clickableList = NextBu,
-            except:
+                iter([NextBu,])
                 clickableList = [NextBu,]
+            except:
+                clickableList = [[NextBu,]]
             for obj in clickableList:
                 if obj.contains(mouse_5):
                     gotValidClick = True
@@ -463,10 +620,6 @@ for thisRatingBlockOrder in RatingBlockOrder:
             Ratingtrials.addData('mouse_5.clicked_name', mouse_5.clicked_name[0])
         Ratingtrials.addData('mouse_5.started', mouse_5.tStart)
         Ratingtrials.addData('mouse_5.stopped', mouse_5.tStop)
-        Ratingtrials.addData('text_4.started', text_4.tStartRefresh)
-        Ratingtrials.addData('text_4.stopped', text_4.tStopRefresh)
-        Ratingtrials.addData('text_5.started', text_5.tStartRefresh)
-        Ratingtrials.addData('text_5.stopped', text_5.tStopRefresh)
         # the Routine "RatingTrial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -631,6 +784,8 @@ thisExp.saveAsWideText(filename+'.csv', delim='auto')
 thisExp.saveAsPickle(filename)
 logging.flush()
 # make sure everything is closed down
+if eyetracker:
+    eyetracker.setConnectionState(False)
 thisExp.abort()  # or data files will save again on exit
 win.close()
 core.quit()
