@@ -13,7 +13,7 @@
     <Param val="" valType="str" updates="None" name="HTML path"/>
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
-    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="['Images/yA-M-ver7.jpg', 'Images/yA-M-ver5.jpg', 'Images/yA-F-ver5.jpg', 'Images/yA-F-ver2.jpg', 'Images/sA-M-ver7.jpg', 'Images/sA-M-ver4.jpg', 'Images/sA-F-ver7.jpg', 'Images/sA-F-ver1.jpg', 'Images/midA-M-ver6.jpg', 'Images/midA-M-ver5.jpg', 'Images/midA-F-ver3.jpg', 'Images/midA-F-ver2.jpg', 'Images/chld-M-ver3.jpg', 'Images/chld-M-ver2.jpg', 'Images/chld-F-ver3.jpg', 'Images/chld-F-ver2.jpg', 'Images/adl-M-ver3.jpg', 'Images/adl-M-ver2.jpg', 'Images/adl-F-ver8.jpg', 'Images/adl-F-ver5.jpg']" valType="fileList" updates="None" name="Resources"/>
     <Param val="False" valType="bool" updates="None" name="Save csv file"/>
     <Param val="False" valType="bool" updates="None" name="Save excel file"/>
     <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
